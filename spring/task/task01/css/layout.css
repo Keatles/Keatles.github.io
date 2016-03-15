@@ -1,0 +1,56 @@
+body{
+    margin:0px;
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+div{
+    box-sizing: border-box;
+}
+.div-left,.div-right,.div-center,.layout{
+    padding:20px;
+    border:1px solid #999;
+}
+.layout {
+    background-color: #eee;
+
+}
+.div-left {
+    width: 200px;
+    float: left;
+    background-color: #fff;
+}
+.div-right {
+    width: 120px;
+    float: right;
+    background-color: #fff;
+}
+.div-center {
+    word-wrap: break-word;
+    margin-left:220px;
+    margin-right:140px;
+    background-color: #fff;
+}
+.div-center p{
+    line-height:30px;
+    padding-left:10px;
+}
+.div-left img {
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+.div-left p{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    float: left;
+    padding-left:10px;
+}
+.clearfix{
+    clear: both;
+}
+.personal-logo {
+    margin: 10px 0;
+    width: 80px;
+    height: 80px;
+    border:1px solid #999;
+}
