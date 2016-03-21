@@ -1,0 +1,451 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Microsoft YaHei", sans-serif; }
+
+header {
+  height: 75px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background: #228ABF; }
+  header img {
+    padding: 20px 80px; }
+  header .login {
+    padding-right: 50px;
+    width: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end; }
+    header .login img {
+      height: 20px;
+      margin-left: -10px;
+      margin-top: 5px; }
+    header .login a {
+      margin-top: -45px;
+      margin-right: 40px;
+      text-decoration: none;
+      color: white; }
+    header .login div {
+      margin-top: 20px;
+      width: 300px;
+      height: 30px;
+      background: white;
+      border-radius: 10px; }
+      header .login div input {
+        background: url(../images/task9/search.png) no-repeat left;
+        width: 300px;
+        height: 30px;
+        border-radius: 10px;
+        border-style: none; }
+        header .login div input:focus {
+          background: none; }
+
+.container .self {
+  width: 25%;
+  float: left;
+  background: #2B2E3D;
+  height: 1026px; }
+  .container .self .avatar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    .container .self .avatar p {
+      margin: 35px 25px;
+      color: white;
+      font-size: 20px; }
+    .container .self .avatar img {
+      width: 60px;
+      height: 60px;
+      border: 2px double white;
+      border-radius: 80px;
+      margin-top: 15px; }
+  .container .self .popularity {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    color: #5A697C;
+    margin-top: 10px; }
+    .container .self .popularity .collect {
+      width: 90px;
+      margin-right: 70px;
+      border-right: 1px solid #666; }
+  .container .self .sheet {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-right: 100px;
+    margin-top: 30px; }
+    .container .self .sheet img {
+      margin-right: 8px; }
+    .container .self .sheet ul, .container .self .sheet li {
+      color: #5A697C;
+      list-style: none;
+      font-size: 14px;
+      line-height: 35px; }
+      .container .self .sheet ul:hover, .container .self .sheet li:hover {
+        color: deepskyblue; }
+    .container .self .sheet .light {
+      color: white; }
+  .container .self nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-right: 120px; }
+    .container .self nav img {
+      margin-right: 10px; }
+    .container .self nav ul, .container .self nav li {
+      list-style: none;
+      font-size: 14px;
+      line-height: 55px; }
+      .container .self nav ul a, .container .self nav li a {
+        text-decoration: none;
+        color: #5A697C; }
+        .container .self nav ul a:hover, .container .self nav li a:hover {
+          color: deepskyblue; }
+.container .apply {
+  width: 75%;
+  float: right;
+  background: #EEEEEE; }
+  .container .apply .loc {
+    padding: 5px 20px;
+    background: white; }
+    .container .apply .loc p {
+      color: #888;
+      font-size: 12px; }
+      .container .apply .loc p span {
+        color: #81A8C9; }
+  .container .apply .search {
+    height: 80px;
+    padding: 20px 80px; }
+    .container .apply .search .search-item {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      background: white;
+      line-height: 30px;
+      color: #888;
+      font-size: 14px;
+      padding-bottom: 20px;
+      border: 1px solid #DDDEE2; }
+      .container .apply .search .search-item .form1 {
+        padding-right: 80px;
+        margin-top: 20px;
+        margin-left: 10px; }
+      .container .apply .search .search-item .deal {
+        margin-top: 10px; }
+      .container .apply .search .search-item img {
+        height: 40px;
+        margin: 20px 160px 0px 0px; }
+      .container .apply .search .search-item .info1 {
+        margin-left: -60px;
+        margin-top: 10px; }
+        .container .apply .search .search-item .info1 select {
+          width: 100px; }
+      .container .apply .search .search-item .info2 {
+        margin-top: 10px;
+        margin-right: 20px; }
+        .container .apply .search .search-item .info2 .item {
+          margin-left: -50px; }
+          .container .apply .search .search-item .info2 .item select {
+            width: 100px; }
+      .container .apply .search .search-item button {
+        width: 60px;
+        height: 30px;
+        margin: 20px 10px;
+        background: #398AC1;
+        color: white; }
+  .container .apply .price {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background: #EEEEEE;
+    margin: 10px 80px;
+    padding-bottom: 20px; }
+    .container .apply .price .arrow {
+      background: white;
+      width: 30px;
+      height: 60px;
+      border: 1px solid #DDDEE2; }
+      .container .apply .price .arrow img {
+        margin: 25px 10px; }
+    .container .apply .price .price-item {
+      width: 100px;
+      height: 60px;
+      background: white;
+      text-align: center;
+      border: 1px solid #DDDEE2; }
+      .container .apply .price .price-item:hover {
+        border-top: 2px solid deepskyblue; }
+      .container .apply .price .price-item span {
+        color: #AAAAAA;
+        font-size: 14px; }
+      .container .apply .price .price-item p {
+        font-size: 10px; }
+      .container .apply .price .price-item h2 {
+        color: #EB6601;
+        font-size: 20px; }
+    .container .apply .price .his {
+      background: white;
+      width: 120px;
+      height: 60px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      border: 1px solid #DDDEE2; }
+      .container .apply .price .his img {
+        width: 30px;
+        height: 30px;
+        margin-top: 20px; }
+      .container .apply .price .his p {
+        margin-top: 24px; }
+        .container .apply .price .his p a {
+          text-decoration: none;
+          color: black; }
+  .container .apply .count {
+    padding: 0px 80px 40px; }
+    .container .apply .count .count-item {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      border: 1px solid #DDDEE2; }
+      .container .apply .count .count-item .count1 {
+        width: 180px;
+        height: 80px;
+        background: white;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between; }
+        .container .apply .count .count-item .count1:hover {
+          border: 2px solid deepskyblue; }
+        .container .apply .count .count-item .count1 .count1-text1 {
+          font-size: 14px;
+          padding-top: 15px;
+          padding-left: 5px; }
+        .container .apply .count .count-item .count1 .count1-text2 {
+          font-size: 12px;
+          color: #999;
+          padding-left: 5px; }
+        .container .apply .count .count-item .count1 .graph {
+          width: 40px;
+          height: 60px;
+          margin: 10px 10px 0px 0px; }
+  .container .apply .project {
+    margin: 0px 80px; }
+    .container .apply .project .project-left {
+      width: 60%;
+      height: 300px;
+      float: left;
+      border: 1px solid #BFC2C9;
+      border-radius: 10px;
+      background: white; }
+      .container .apply .project .project-left .pro-top {
+        padding: 5px 20px;
+        background: #EEEEEE; }
+        .container .apply .project .project-left .pro-top p {
+          font-size: 14px;
+          color: #B5B5B7; }
+      .container .apply .project .project-left .btn {
+        padding: 0px 10px;
+        height: 30px; }
+        .container .apply .project .project-left .btn #btn1 {
+          background: white; }
+        .container .apply .project .project-left .btn button {
+          width: 70px;
+          height: 30px;
+          background: #EEEEEE;
+          border: 1px solid #BFC2C9; }
+      .container .apply .project .project-left .table {
+        border: 1px solid #BFC2C9;
+        margin: 0px 60px 0px 10px; }
+        .container .apply .project .project-left .table table {
+          margin: 20px 20px; }
+          .container .apply .project .project-left .table table td {
+            border: 1px solid #BFC2C9;
+            line-height: 25px;
+            padding-right: 2px; }
+    .container .apply .project .project-right {
+      border: 1px solid #BFC2C9;
+      height: 300px;
+      border-radius: 10px;
+      width: 37%;
+      float: right;
+      background: white; }
+      .container .apply .project .project-right .pro-top {
+        padding: 5px 20px;
+        background: #EEEEEE; }
+        .container .apply .project .project-right .pro-top p {
+          font-size: 14px;
+          color: #B5B5B7; }
+      .container .apply .project .project-right .pro-mid {
+        padding: 10px 50px; }
+        .container .apply .project .project-right .pro-mid p {
+          font-size: 14px;
+          color: #BFC2C9; }
+        .container .apply .project .project-right .pro-mid h4 {
+          font-size: 14px;
+          font-weight: 100; }
+        .container .apply .project .project-right .pro-mid table {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          text-align: center;
+          border-top: 1px solid #e2e2e2;
+          border-bottom: 1px solid #e2e2e2; }
+          .container .apply .project .project-right .pro-mid table td {
+            width: 200px; }
+          .container .apply .project .project-right .pro-mid table .td-left {
+            border-right: 1px solid #e2e2e2; }
+      .container .apply .project .project-right .pro-bottom {
+        border-top: 1px solid #e2e2e2;
+        margin-top: 50px;
+        font-size: 14px; }
+        .container .apply .project .project-right .pro-bottom button {
+          margin-left: 140px;
+          width: 50px;
+          height: 20px;
+          background: #398AC1;
+          color: white;
+          border-style: none;
+          border-radius: 5px; }
+  .container .apply .last {
+    height: 640px;
+    padding: 0px 80px; }
+    .container .apply .last .calendar {
+      margin-top: 10px;
+      width: 40%;
+      float: left;
+      height: 300px;
+      border: 1px solid #BFC2C9;
+      border-radius: 10px;
+      background: white; }
+      .container .apply .last .calendar .calendar-top {
+        padding: 5px 20px;
+        background: #EEEEEE; }
+        .container .apply .last .calendar .calendar-top p {
+          font-size: 14px;
+          color: #B5B5B7; }
+      .container .apply .last .calendar .calendar-func {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around; }
+        .container .apply .last .calendar .calendar-func select {
+          width: 85px; }
+      .container .apply .last .calendar .calendar-main {
+        text-align: left; }
+        .container .apply .last .calendar .calendar-main table thead th {
+          padding-right: 20px;
+          font-weight: 200;
+          padding-left: 10px; }
+          .container .apply .last .calendar .calendar-main table thead th:hover {
+            border-bottom: 1px solid deepskyblue; }
+        .container .apply .last .calendar .calendar-main table tbody {
+          font-size: 14px;
+          text-align: center; }
+          .container .apply .last .calendar .calendar-main table tbody td:hover {
+            border: 1px solid deepskyblue; }
+    .container .apply .last .car {
+      float: right;
+      border: 1px solid #BFC2C9;
+      width: 59%;
+      margin-top: 10px;
+      border-radius: 10px;
+      background: white; }
+      .container .apply .last .car .car-top {
+        padding: 5px 20px;
+        background: #EEEEEE; }
+        .container .apply .last .car .car-top p {
+          font-size: 14px;
+          color: #B5B5B7; }
+      .container .apply .last .car .car-main {
+        padding: 17px 20px; }
+        .container .apply .last .car .car-main table {
+          border: 1px solid #e2e2e2; }
+          .container .apply .last .car .car-main table thead th {
+            font-weight: 200;
+            padding-right: 30px; }
+          .container .apply .last .car .car-main table tbody .line1 {
+            display: flex; }
+          .container .apply .last .car .car-main table tbody .left1 {
+            border-bottom: 5px solid #EE6E53;
+            width: 200px; }
+          .container .apply .last .car .car-main table tbody .right1 {
+            border-bottom: 5px solid #DDDDDD;
+            width: 30px; }
+          .container .apply .last .car .car-main table tbody .line2 {
+            display: flex; }
+          .container .apply .last .car .car-main table tbody .left2 {
+            border-bottom: 5px solid #EE6E53;
+            width: 180px; }
+          .container .apply .last .car .car-main table tbody .right2 {
+            border-bottom: 5px solid #DDDDDD;
+            width: 50px; }
+          .container .apply .last .car .car-main table tbody .line3 {
+            display: flex; }
+          .container .apply .last .car .car-main table tbody .left3 {
+            border-bottom: 5px solid #F19E4E;
+            width: 160px; }
+          .container .apply .last .car .car-main table tbody .right3 {
+            border-bottom: 5px solid #DDDDDD;
+            width: 70px; }
+          .container .apply .last .car .car-main table tbody .line4 {
+            display: flex; }
+          .container .apply .last .car .car-main table tbody .left4 {
+            border-bottom: 5px solid #80CBF2;
+            width: 150px; }
+          .container .apply .last .car .car-main table tbody .right4 {
+            border-bottom: 5px solid #DDDDDD;
+            width: 80px; }
+          .container .apply .last .car .car-main table tbody .line5 {
+            display: flex; }
+          .container .apply .last .car .car-main table tbody .left5 {
+            border-bottom: 5px solid #80CBF2;
+            width: 140px; }
+          .container .apply .last .car .car-main table tbody .right5 {
+            border-bottom: 5px solid #DDDDDD;
+            width: 90px; }
+          .container .apply .last .car .car-main table tbody .line6 {
+            display: flex; }
+          .container .apply .last .car .car-main table tbody .left6 {
+            border-bottom: 5px solid #80CBF2;
+            width: 130px; }
+          .container .apply .last .car .car-main table tbody .right6 {
+            border-bottom: 5px solid #DDDDDD;
+            width: 100px; }
+          .container .apply .last .car .car-main table tbody .line7 {
+            display: flex; }
+          .container .apply .last .car .car-main table tbody .left7 {
+            border-bottom: 5px solid #80CBF2;
+            width: 120px; }
+          .container .apply .last .car .car-main table tbody .right7 {
+            border-bottom: 5px solid #DDDDDD;
+            width: 110px; }
+          .container .apply .last .car .car-main table tbody .line8 {
+            display: flex; }
+          .container .apply .last .car .car-main table tbody .left8 {
+            border-bottom: 5px solid #80CBF2;
+            width: 110px; }
+          .container .apply .last .car .car-main table tbody .right8 {
+            border-bottom: 5px solid #DDDDDD;
+            width: 120px; }
+          .container .apply .last .car .car-main table tbody .line9 {
+            display: flex; }
+          .container .apply .last .car .car-main table tbody .left9 {
+            border-bottom: 5px solid #80CBF2;
+            width: 90px; }
+          .container .apply .last .car .car-main table tbody .right9 {
+            border-bottom: 5px solid #DDDDDD;
+            width: 140px; }
+          .container .apply .last .car .car-main table tbody .line10 {
+            display: flex; }
+          .container .apply .last .car .car-main table tbody .left10 {
+            border-bottom: 5px solid #80CBF2;
+            width: 80px; }
+          .container .apply .last .car .car-main table tbody .right10 {
+            border-bottom: 5px solid #DDDDDD;
+            width: 150px; }
+          .container .apply .last .car .car-main table tbody td {
+            font-size: 14px; }
+          .container .apply .last .car .car-main table tbody .line1, .container .apply .last .car .car-main table tbody .line2, .container .apply .last .car .car-main table tbody .line3, .container .apply .last .car .car-main table tbody .line4, .container .apply .last .car .car-main table tbody .line5, .container .apply .last .car .car-main table tbody .line6, .container .apply .last .car .car-main table tbody .line7, .container .apply .last .car .car-main table tbody .line8, .container .apply .last .car .car-main table tbody .line9, .container .apply .last .car .car-main table tbody .line10 {
+            margin-top: 5px; }
+
+/*# sourceMappingURL=task01_09.css.map */

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            display:flex;
+            align-items:flex-end;
+            justify-content: flex-start;
+        }
+        .item{
+            margin:20px;
+            width:150px;
+            border:1px solid tomato;
+        }
+        .item1{
+            height:120px;
+        }
+        .item2{
+            height:100px;
+        }
+        .item3{
+            height:40px;
+        }
+        .item4{
+            height:200px;
+            border-color:blue;
+        }
+        @media screen and (max-width:640px){
+            .item4{
+                order:-1;
+            }
+            .container{
+                display:flex;
+                flex-flow:row wrap;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+        <div class="item item4"></div>
+    </div>
+</body>
+</html>
