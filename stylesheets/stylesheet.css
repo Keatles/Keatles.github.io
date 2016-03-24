@@ -423,3 +423,12 @@ Small Device Styles
   }
 
 }
+.task{
+  padding:50px;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.task1{
+  margin-right:30px;
+}
