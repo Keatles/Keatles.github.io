@@ -24,25 +24,26 @@
             margin-right:20px;
             margin-bottom:20px;
         }
-        .input-number{
-            border-radius: 5px;
-            border:1px solid black;;
+        #input{
+            width:300px;
         }
 
     </style>
 </head>
 <body>
 <div class="button">
-    <input type="number" class="input-number" id="input"  placeholder="请输入数字">
+    <textarea id="input" placeholder="请输入内容，并以任意字符为分割"></textarea>
     <button type="button" id="input-left">左侧入</button>
     <button type="button" id="input-right">右侧入</button>
     <button type="button" id="out-left">左侧出</button>
     <button type="button" id="out-right">右侧出</button>
+    <textarea id="search" placeholder="请输入需要查询词的部分内容">德玛西亚</textarea>
+    <button type="button" id="search-btn">查询</button>
 </div>
 <div class="show" id="show">
-    <div class="block">54</div>
-    <div class="block">23</div>
-    <div class="block">34</div>
+    <div class="block">德玛西亚</div>
+    <div class="block">ynwa</div>
+    <div class="block">421</div>
 </div>
 <script src="js/task20.js"></script>
 </body>
