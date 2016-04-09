@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function BinarySearchTree(){
+            this._root = null;
+        }
+        BinarySearchTree.prototype = {
+            //restore constructor
+            constructor:BinarySearchTree,
+
+            add:function(value){
+                //create a new item object,place data in
+                var node = {
+                    value:value,
+                    left:null,
+                    right:null
+                },
+                //used to traverse the structure
+                current;
+                //special case:no items in the tree yet
+                if(this._root === null){
+                    this._root = node;
+                }else{
+                    current = this._root;
+
+                    while(true){
+
+                    }
+                }
+            },
+
+            contains:function(value){
+                var found = false,
+                        current = this._root
+                //make sure there's a node to search
+                while(!found && current.value) {
+                    if (value < current.value) {
+                        current = current.left;
+                    } else if (value > current.value) {
+                        current = current.right;
+                        //values are equal,found it !
+                    } else {
+                        found = true;
+                    }
+                }
+                return found;
+            },
+
+            remove:function(value){},
+
+            size:function(){},
+
+            toArray:function(){},
+
+            toString:function(){}
+        }
+    </script>
+</body>
+</html>
