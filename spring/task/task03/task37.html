@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css"
+</head>
+<body>
+    <header>
+        <ul>
+            <li class="signin-link" id="loginLink">
+                <a href="">登录</a>
+            </li>
+        </ul>
+    </header>
+    <p>点击半透明遮罩或浮出层顶部关闭按钮,关闭浮出层</p>
+    <p>点击页面深绿色头部登录按钮,显示浮出层</p>
+    <p>拖拽浮出层顶部,可使其移动</p>
+    <p>拖拽浮出层右边框或下边框,可改变其大小</p>
+    <div class="mask" id="mask"></div>
+    <div class="login-box" id="loginBox">
+        <div class="login-box-header" id="loginBoxHeader">
+            <h1>登录</h1>
+            <input class="close-btn" id="closeBtn" type="button" value="X">
+        </div>
+        <div class="login-content">
+            <form method="post" action="signin.php">
+                <input type="text" name="username" placeholder="请输入用户名/邮箱" />
+                <input type="password" name="password" placeholder="请输入密码" />
+                <input type="button" value="登录" />
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/task37.js"></script>
+</body>
+</html>
