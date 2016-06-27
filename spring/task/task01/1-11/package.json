@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "gulp build",
+    "dev": "gulp dev",
+    "sass": "gulp sass",
+    "serve": "gulp serve",
+    "swig": "gulp swig",
+    "uglify": "uglifyjs src/flexible.js -m -c -o src/flexible.min.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "browser-sync": "^2.11.1",
+    "chokidar-cli": "^1.2.0",
+    "clean-css": "^3.4.10",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.3",
+    "gulp-sass": "^2.2.0",
+    "gulp-swig": "^0.8.0",
+    "postcss-cli": "^2.5.1",
+    "swig": "^1.4.2",
+    "uglify-js": "^2.6.2"
+  }
+}
