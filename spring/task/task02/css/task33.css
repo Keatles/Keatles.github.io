@@ -1,0 +1,56 @@
+.container {
+    position: relative;
+    margin: 20px auto;
+    width: 500px;
+    height: 600px;
+}
+table {
+    position: absolute;
+    border-collapse: collapse;
+    width: 496px;
+    height: 496px;
+}
+table tbody tr td {
+    width: 45px;
+    border: 1px solid transparent;
+    border-bottom-color: #c2c2c2;
+    border-right-color: #c2c2c2;
+    font-size: 18px;
+    text-align: center;
+}
+table tbody tr:last-child td {
+    border-bottom-color: #000;
+}
+table tbody tr td:first-child {
+    border-right-color: #000;
+    border-bottom-color: transparent;
+}
+table tbody tr td:last-child {
+    border-right: 1px solid #000;
+}
+table tbody tr:first-child td {
+    border-right-color: transparent;
+    border-bottom-color: #000;
+}
+table tbody tr:first-child td:first-child {
+    border-bottom-color: transparent;
+}
+.block {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background-color: red;
+}
+.block div {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: blue;
+    z-index: 2;
+}
+.bar {
+    position: absolute;
+    bottom: 0;
+    left: 45px;
+    height: 30px;
+}
