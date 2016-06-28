@@ -1,5 +1,5 @@
 /**
- * Created by kee on 2016-06-27.
+ * Created by kee on 2016-06-28.
  */
 (function() {
     /**
@@ -68,6 +68,9 @@
                 break;
             case 'TUN BAC':                         //后转
                 rotate(this.block, 2);
+                break;
+            case 'TRA LEF':
+                this.tryPath(this.block.direction);
                 break;
             default:
                 break;
