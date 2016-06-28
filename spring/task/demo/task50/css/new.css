@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.newQuestion{
+	text-align: center;
+}
+/*
+button{
+	margin: 175px auto;
+	padding: 50px;
+	
+	background-color: #E67312;
+	color: #FFFFFF;
+	height: 60px;
+	border-radius: 5px;
+	
+}
+button span{
+	margin: 0 50px;
+	font-size: 25px;
+	font-weight: bold;
+}
+*/
+.buttonNew {
+    /*display: inline-block;
+    */
+    zoom: 1;
+    vertical-align: baseline;
+    margin: 175px auto;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 30px/100% Arial, Helvetica, sans-serif;
+    padding: .5em 1.5em .55em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .3em;
+    -moz-border-radius: .3em;
+    border-radius: .3em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.buttonNew.orange {
+    color: #fef4e9;
+    border: solid 1px #da7c0c;
+    background: #f78d1d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+    background: -moz-linear-gradient(top, #faa51a, #f47a20);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>edit</title>
+	<link rel="stylesheet" href="css/common-buttons.css">
+	<link rel="stylesheet" href="css/edit.css">
+</head>
+<body>
+	<div id="editZone">	
+		<div class="qTitle"><input id="inputTitle" type="text"></div>
+		<div id="questionZone">
+			<div class="question" id="question"></div>
+			<div class="questionChoose">
+				<div class="questionType" id="questionType"><button id="oneChoose" class="button big">单选</button><button id="moreChoose" class="button big">多选</button><button id="textWrite" class="button big">文本题</button></div>
+				<div class="questionAdd" id="questionAdd"><span>添加问题</span></div>
+			</div>
+		</div>
+		<div id="saveButton"><span class='spaceBoth'><button id="saveQuestion" class="button big">保存问卷</button></span><span class='spaceBoth'><button id="submitQuestion" class="button big">发布问卷</button></span></div>
+		<div id="timeDiv">
+			<div id = "dateText">问卷截止时间: 
+				<div id="dataTime">
+					<input type="text" id = "dateInput" readonly="readonly">
+					<div id = "hidePart">
+						<div id = "leadTable"></div>
+						<table id = "calTable">
+							<tr class="tableTitle">
+								<th><div id = "thLeft"></div></th>
+								<th colspan="5" id = "chooseDay">
+									<span id = "chooseMonth">
+										<span id = "cMonth"></span>
+										<input type="text" id = "inputMonth">
+									</span>
+									&nbsp
+									<span id = "chooseYear">
+										<span id = "cYear"></span>
+										<input type="text" id = "inputYear">
+									</span>
+								</th>
+								<th><div id = "thRight"></div></th>
+							</tr>
+							<tr class="tableTitle">
+								<td>Mon</td>
+								<td>Tue</td>
+								<td>Wed</td>
+								<td>Thu</td>
+								<td>Fri</td>
+								<td>Sat</td>
+								<td>Sun</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-1.12.2.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/edit.js"></script>
+</body>
+</html>

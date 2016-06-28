@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#cssDetectFoo{
+	width: 1px;
+}
+#dataZone{
+	margin: 0 50px;
+	position: relative;
+	padding: 20px;
+}
+#questionZone{
+	border-top: 3px solid #BEBEBE;
+	border-bottom: 3px solid #BEBEBE;
+	padding: 20px;
+}
+.qTitle{
+	margin: 20px;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
+	text-align: center;
+	width: 100%;
+	padding: 20px 0;
+}
+
+.questionDetail{
+	height: 400px;
+	position: relative;
+}
+.questionZone{
+	padding: 20px;
+}
+.questionZone:hover{
+	background-color: #FDF1E6;
+}
+.questionOption{
+	padding-left: 50px;
+	margin: 10px;
+}
+
+#backButton{
+	text-align: center;
+	padding: 50px;
+}
+
+.groundColor{
+	background-color: #FDF1E6;
+}
+
+.spaceBoth{
+	padding: 0 10px;
+}
+.answerNum{
+	color: #000000;
+}
+
+.chart {
+	cursor: pointer;
+	position: absolute;
+}
+
+.chartData {
+	border-collapse: collapse;
+	border: none;
+	/*
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+	background-position: 0 -100px;*/
+}
+
+.chartData th, .chartData td {
+	padding: 0.5em;
+	text-align: left;
+}
+.chartData td {
+	cursor: pointer;
+}
+.chartData td.highlight {
+	background: #e8e8e8;
+}
+.chartData tr:hover td {
+	background: #f0f0f0;
+}
+.chartBgSpan{
+	height: 15px;
+	border: 2px solid #333;
+	box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+	background-position: 0 -100px;
+}

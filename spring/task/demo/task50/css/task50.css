@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #EFEFEF;
+}
+.header{
+	background-color: #E67312;
+	color: #ffffff;
+	padding: 20px 100px;
+}
+.header #manage{
+	font-size: 25px;
+	line-height: 25px;
+	font-weight: bold;
+}
+.header #myQuestion{
+	font-size: 20px;
+	margin-left: 100px;
+	line-height: 20px;
+}
+.mbody{
+	margin: 100px auto;
+	width: 70%;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #B9B9B9;
+}
