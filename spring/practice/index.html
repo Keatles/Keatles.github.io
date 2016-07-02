@@ -1,50 +1,63 @@
 <!DOCTYPE html>
-<html lang="en" ng-app >
+<html lang="en" ng-app>
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-<!-- HTML -->
 
 
 <script>
-    var
-            fileInput = document.getElementById('test-image-file'),
-            info = document.getElementById('test-file-info'),
-            preview = document.getElementById('test-image-preview');
-    // 监听change事件:
-    fileInput.addEventListener('change', function () {
-        // 清除背景图片:
-        preview.style.backgroundImage = '';
-        // 检查文件是否选择:
-        if (!fileInput.value) {
-            info.innerHTML = '没有选择文件';
-            return;
+    'use strict';
+//    function success(text){
+//        var textarea = document.getElementById("test-response-text");
+//        textarea.value = text;
+//    }
+//    function fail(code){
+//        var textarea = document.getElementById("test-response-text");
+//        textarea.value = 'Error code:' + code;
+//    }
+//
+//    var request = new XMLHttpRequest();           //新建XMLHttpRequest对象
+//
+//    request.onreadystatechange = function(){      //状态发生变化时，函数被回调
+//        if(request.readystate === 4){             //4 means succeed
+//            //判断相应结果
+//            if(request.status === 200){
+//                //成功，通过responseText拿到相应的文本
+//                return success(request.responseText)
+//            }else{
+//                //失败，根据相应判断失败原因
+//                return fail(request.status);
+//            }
+//        }else{
+//            //HTTP 请求还在继续
+//        }
+//
+//    }
+//
+//    //发送请求
+//    request.open('GET','/categories.txt')
+//    request.send();
+//
+//    console.log("请求以发送，请等待相应")
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function(){
+        if(xhr.readyState == 4){
+            if((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304){
+                console.log(xhr.responseText);
+            }else{
+                console.log("Request was unsuccessful:" + xhr.status);
+            }
         }
-        // 获取File引用:
-        var file = fileInput.files[0];
-        // 获取File信息:
-        info.innerHTML = '文件: ' + file.name + '<br>' +
-                '大小: ' + file.size + '<br>' +
-                '修改: ' + file.lastModifiedDate;
-        if (file.type !== 'image/jpeg' && file.type !== 'image/png' && file.type !== 'image/gif') {
-            alert('不是有效的图片文件!');
-            return;
-        }
-        // 读取文件:
-        var reader = new FileReader();
-        reader.onload = function(e) {
-            var
-                    data = e.target.result; // 'data:image/jpeg;base64,/9j/4AAQSk...(base64编码)...'
-            preview.style.backgroundImage = 'url(' + data + ')';
-        };
-        // 以DataURL的形式读取文件:
-        reader.readAsDataURL(file);
-    });
+    };
+    xhr.open("get","example.txt",true);
+    xhr.send(null)
 </script>
 
-
+<input required="required">
 
 </body>
 </html>
