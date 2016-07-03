@@ -14,9 +14,9 @@
 .sidebar{
     background-color: #5DC3B0;
     color:#F0F2F1;
-    width:19%;   //打印版
     border-bottom-left-radius: 0.1em;
     border-top-left-radius: 0.1em;
+    width:30%;
 }
 .icon{
     display: block;
@@ -62,7 +62,7 @@ li{
     background-color: #F0F2F1;
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
-    width:33%;  //打印版
+    /*width:33%;  //打印版*/
 }
 .main dt{
     font-size:1.4em;
