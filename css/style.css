@@ -64,7 +64,9 @@ body {
     .page .contain .skill {
       display: flex;
       flex-flow: wrap row;
-      justify-content: center; }
+      justify-content: center;
+      padding-left:10em;
+    }
 
 #pageContain {
   overflow: hidden; }
