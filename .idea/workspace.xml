@@ -37,8 +37,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15480427">
-              <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.62811387">
+              <caret line="85" column="8" selection-start-line="71" selection-start-column="10" selection-end-line="85" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -101,14 +101,14 @@
       </file>
       <file leaf-file-name="style.css.map" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css.map">
+          <provider editor-type-id="sourcemapFileViewerProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
               <folding />
             </state>
-          </provider>
-          <provider editor-type-id="sourcemapFileViewerProvider">
-            <state />
           </provider>
         </entry>
       </file>
@@ -258,8 +258,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -827,11 +827,12 @@
       <workItem from="1469275924353" duration="1567000" />
       <workItem from="1469547856755" duration="8000" />
       <workItem from="1469713497896" duration="309000" />
+      <workItem from="1469887171730" duration="17000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220467000" />
+    <option name="totallyTimeSpent" value="220484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="470" y="28" width="891" height="728" extended-state="0" />
@@ -1195,14 +1196,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
@@ -1265,8 +1266,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15480427">
-          <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.62811387">
+          <caret line="85" column="8" selection-start-line="71" selection-start-column="10" selection-end-line="85" selection-end-column="8" />
           <folding />
         </state>
       </provider>
