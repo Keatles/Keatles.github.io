@@ -1,6 +1,7 @@
-#carousel-example-generic{
-    margin-top:-20px;
-}
-#carousel-text{
-    margin-top:10em;
-}
+#carousel-example-generic {
+  margin-top: -20px; }
+  #carousel-example-generic .container {
+    text-align: center;
+    margin-top: -3em; }
+
+/*# sourceMappingURL=index.css.map */
