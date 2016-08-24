@@ -5,9 +5,33 @@
     <title>Title</title>
 </head>
 <body>
-    <h1 id="new"></h1>
-    <script src="addLoadEvent.js"></script>
-    <script src="getHTTPObject.js"></script>
-    <script src="getNewContent.js"></script>
+    <!--<h1 id="new"></h1>-->
+    <!--<script src="addLoadEvent.js"></script>-->
+    <!--<script src="getHTTPObject.js"></script>-->
+    <!--<script src="getNewContent.js"></script>-->
+    <script>
+        function CaesarCipher(str, shift) { // charCode: A = 65; Z = 90
+            str = str.toUpperCase();
+            var newStr = '';
+            var charCode = 0;
+            for (var i=0; i<str.length; i++){
+                charCode = str.charCodeAt(i);
+                if (charCode >= 65 && charCode <= 90) { // it's a letter
+                    newIndex = charCode + shift;
+                    if (newIndex > 90) // shift > 0
+                        newIndex = 65+(shift-(90-charCode))-1;
+                    else if (newIndex < 65) // shift < 0
+                        newIndex = 90-(65-(charCode+shift))+1;
+                    newStr = newStr.concat(String.fromCharCode(newIndex));
+                }
+                else
+                    newStr = newStr.concat(String.fromCharCode(charCode));
+            }
+            console.log('end');
+            return newStr;
+        }
+
+        console.log(CaesarCipher("SERR PBQR PNZC", 13));
+    </script>
 </body>
 </html>
