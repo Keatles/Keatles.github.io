@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkbox & radio</title>
+    <style>
+        /* 伪元素 */
+        .checkbox{
+            margin:30px 100px;
+        }
+        input{
+            margin:0;
+            display: none;
+        }
+        .checkBox+label,.radio+label{
+            display:flex;
+            width:16px;
+            height: 16px;
+            border:2px solid #d9d9d9;
+        }
+        .checkBox:checked+label,.radio:checked+label{
+            border:2px solid red;
+        }
+        .checkBox:checked+label::after{
+            margin: -2px auto;
+            content: '√';
+            color: red;
+        }
+        .choose{
+            margin:30px 100px;
+        }
+        .radio+label{
+            border-radius: 50%;
+        }
+        .radio:checked+label::after{
+           margin:-3px auto ;
+            color:red;
+            content: '▪';
+        }
+        /* sprite */
+        .checkBoxSprite+label,.radioSprite+label{
+            width: 16px;
+            height:16px;
+            border:none;
+            display: inline-block;
+            background:url('sprite.png') no-repeat;
+        }
+        .checkBoxSprite+label{
+            background-position: -24px -31px;
+        }
+        .radioSprite+label{
+            background-position: -24px -10px;
+        }
+        .checkBoxSprite:checked+label{
+            background-position: -59px -31px;
+        }
+        .radioSprite:checked+label{
+            background-position: -59px -10px;
+        }
+    </style>
+</head>
+<body>
+<div class="checkbox">
+    <h2>伪元素</h2>
+    <h3>checkbox</h3>
+    <input type="checkbox"  id="checkBox" class="checkBox">
+    <label for="checkBox"></label>
+</div>
+<div class="choose">
+    <h3>radio</h3>
+    <input type="radio" id="radio" class="radio">
+    <label for="radio"></label>
+</div>
+
+<div class="checkbox">
+    <h2>sprite</h2>
+    <h3>checkbox</h3>
+    <input type="checkbox"  id="checkBoxSprite" class="checkBoxSprite">
+    <label for="checkBoxSprite"></label>
+</div>
+<div class="choose">
+    <h3>radio</h3>
+    <input type="radio" id="radioSprite" class="radioSprite">
+    <label for="radioSprite"></label>
+</div>
+</body>
+</html>
