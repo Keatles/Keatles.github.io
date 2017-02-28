@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple </title>
+    <script src="three.js"></script>
+    <script>
+        function init() {
+            var renderer = new THREE.WebGLRenderer({
+                canvas: document.getElementById('mainCanvas')
+            });
+            renderer.setClearColor(0x000000);
+
+            //scene
+            var scene = new THREE.Scene();
+
+            //camera
+            var camera = new THREE.OrthographicCamera(-5, 5, 3.75, -3.75, 0.1, 100);
+            camera.position.set(15, 5, 15);
+            camera.lookAt(new THREE.Vector3(0, 0, 0));
+            scene.add(camera);
+
+            var light = new THREE.PointLight(0xffffff,1,100);
+            light.position.set(10,15,25);
+            scene.add(light);
+            var material = new THREE.MeshLambertMaterial({
+                color:0xffffff
+            });
+
+
+            var cube = new THREE.Mesh(new THREE.CubeGeometry(6, 3, 3),
+                    material);
+
+
+
+
+            var torus = new THREE.TorusGeometry(0.8, 0.2, 80, 80);
+            var toru1 = new THREE.Mesh(torus,material);
+            var toru2 = new THREE.Mesh(torus,material);
+            var toru3 = new THREE.Mesh(torus,material);
+            var toru4 = new THREE.Mesh(torus,material);
+            toru2.position.set(1.6, -1.5, 1.45);
+            toru1.position.set(-1.8,-1.5,1.45);
+            toru3.position.set(-1.8,-1.5,-1.45);
+            toru4.position.set(1.6,-1.5,-1.45);
+            scene.add(cube,toru1,toru2,toru3,toru4);
+
+
+
+//            var sphere = new THREE.Mesh(new THREE.SphereGeometry(3,20,8),material);
+//            scene.add(sphere)
+
+
+
+            renderer.render(scene,camera);
+        }
+
+
+
+    </script>
+</head>
+<body onload="init()">
+    <canvas width="400px" height="300px" id="mainCanvas"></canvas>
+</body>
+</html>
