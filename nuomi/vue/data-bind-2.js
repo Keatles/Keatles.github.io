@@ -25,7 +25,7 @@ class Observer{
     constructor(data){
         this.data = data;
         this.walk(data);
-        this.events = new EventEmitter();
+        this.eventEmit = new EventEmitter();
     }
     //属性遍历
     walk(obj){
@@ -51,7 +51,7 @@ class Observer{
             set:function(newVal){
                 if(val === newVal) return;
                 console.log('你设置了 ' + key +"," + "值为 " + newVal);
-                _this.events.emit(key,val,newVal);
+                _this.eventEmit.emit(key,val,newVal);
                 val = newVal;
                 if(typeof val === 'object'){
                     new Observer(val);
@@ -60,7 +60,7 @@ class Observer{
         })
     }
     $watch(attr,callback){
-    this.events.on(attr,callback);
+    this.eventEmit.on(attr,callback);
 }
 }
 let app = new Observer({
